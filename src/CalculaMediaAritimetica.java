@@ -21,8 +21,8 @@ public class CalculaMediaAritimetica {
     public static void main(String[] args){
 
         // *** ENTRADA DE DADOS ***
-        double primeiroNumero = 99.2;
-        double segundoNumero = 87.2;
+        double primeiroNumero = 2;
+        double segundoNumero = 2;
 
         // *** PROCESSAMENTO ***
         double resultado = (primeiroNumero + segundoNumero) / 2;
