@@ -32,6 +32,7 @@ public class CalculaMediaAritimetica {
         double segundoNumero = scanner.nextDouble();
 
 
+
         // *** PROCESSAMENTO ***
         double resultado = (primeiroNumero + segundoNumero) / 2;
 
