@@ -1,6 +1,6 @@
 import java.util.Locale;
 import java.util.Scanner;
-
+// https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
 public class Concatenacao{
 
     public static void main(String[] args) {
