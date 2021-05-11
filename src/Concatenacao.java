@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 public class Concatenacao{
 
-
-
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         // Criar mensagem que solicita ao usuario o nome e a idade//
@@ -24,7 +22,9 @@ public class Concatenacao{
         System.out.println("Digite o seu peso");
         double peso = scanner.nextDouble();
 
-        System.out.printf("o meu nome é %s e tenho %d anos, minha altura é %.2f e meu peso é %.2f", nome, idade, altura, peso);
+        System.out.printf("o meu nome é %s e tenho %d anos, minha altura é %.2f e meu peso é %.2fn", nome, idade, altura, peso);
+
+        scanner.close();
 
     }
 
