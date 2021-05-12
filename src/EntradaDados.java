@@ -9,7 +9,7 @@ public class EntradaDados {
         Scanner scanner = new Scanner(System.in);
 
         int x;
-        String s1,s2,s3,s4;
+        String s1,s2,s3;
 
         x = scanner.nextInt();
         scanner.nextLine();
