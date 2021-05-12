@@ -30,27 +30,3 @@ public class CalculaAreaTrapezio {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
