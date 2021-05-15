@@ -37,13 +37,16 @@ public class Ex1005 {
         double A = scanner.nextDouble();
         double B = scanner.nextDouble();
 
+
         double media = (3.5 * A + 7.5 * B) / 11;
 
-        System.out.println(media);
+        System.out.printf("MEDIA = "+ "%.5f" , media);
+        System.out.println();
 
 
 
 
+        scanner.close();
 
 
 
