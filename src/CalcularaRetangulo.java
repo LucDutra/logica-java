@@ -15,9 +15,9 @@ public class CalcularaRetangulo {
         double perimetro = 2 * base + 2 * altura;
         double diagonal = Math.sqrt(base * base + altura * altura);
 
-        System.out.printf("Area: " + "%.4f%n", area);
-        System.out.printf("Perimetro: " + "%.4f%n", perimetro);
-        System.out.printf("Diagonal: " + "%.4f", diagonal);
+        System.out.printf("Area = %.4f%n " , area);
+        System.out.printf("Perimetro = %.4f%n", perimetro);
+        System.out.printf("Diagonal = %.4f%n", diagonal);
 
 
         scanner.close();
