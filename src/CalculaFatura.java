@@ -10,7 +10,8 @@ public class CalculaFatura {
 
         double conta = 50.0;
         if(minutos > 100){
-            conta = conta + (minutos - 100 ) * 2.0;
+            //conta = conta + (minutos - 100 ) *2.0;
+            conta +=  (minutos - 100 ) * 2.0;
         }
         System.out.printf("Valor da conta =  R$ %.2f%n", conta);
         System.out.println("fim do programa");
