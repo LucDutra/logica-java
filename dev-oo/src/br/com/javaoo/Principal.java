@@ -12,6 +12,7 @@ public class Principal {
         /*   Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
 
+        Objetos ORIENTADO PUBLICOS - sem utilizar SET E GET
 
         Triangulo x = new Triangulo();
 
@@ -45,27 +46,41 @@ public class Principal {
        */
 
 
+         //    Objetos PRIVADO - SET (RECEBENDO INFO)   // GET(INFORMANDO OS DADOS)
+
+
         Product eletrodomestico = new Product();
-        eletrodomestico.setName("Geladeira Preta");
+        eletrodomestico.setName("Geladeira ");
+        System.out.println("Produto" + eletrodomestico.getName());
         eletrodomestico.setPrice(1.200);
-        eletrodomestico.setQuantity(2);
+        System.out.println("Valor" + eletrodomestico.getPrice());
+        eletrodomestico.addProducts(5);
+        System.out.println("Quantidade: " + eletrodomestico.getQuantity());
+        eletrodomestico.setColor("Preta");
+        System.out.println("Cor: " + eletrodomestico.getColor());
+        System.out.println("Valor total em estoque: " + eletrodomestico.totalValueInStock());
 
 
-
-
-        System.out.println(eletrodomestico.getName());
-        System.out.println(eletrodomestico.getPrice());
-        System.out.println(eletrodomestico.getQuantity());
-
+        System.out.println();
 
         Product mesa = new Product();
         mesa.setName("Mesa de jantar com 4 cadeiras");
+        System.out.println("Produto" + mesa.getName());
         mesa.setPrice(7.8);
-        mesa.setQuantity(5);
-
-        System.out.println(mesa.getName());
-        System.out.printf("%.4f%n", mesa.getPrice());
+        System.out.printf("Valor %.4f%n" , mesa.getPrice());
+        System.out.println("Quantidade: " + mesa.getQuantity());
+        mesa.setColor("Vermelha");
+        System.out.println("Cor: " + mesa.getColor());
+        System.out.println("Valor total em estoque: " + mesa.totalValueInStock());
+        mesa.addProducts(2);
         System.out.println(mesa.getQuantity());
+        mesa.removeProducts(4);
+        System.out.println(mesa.getQuantity());
+
+
+
+
+
 
     }
 }

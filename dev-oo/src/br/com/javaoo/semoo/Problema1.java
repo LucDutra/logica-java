@@ -1,5 +1,8 @@
 package br.com.javaoo.semoo;
 
+import br.com.javaoo.entities.Product;
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -17,49 +20,30 @@ public class Problema1 {
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
 
-        double  valorTotal = 0;
-        double  quantidadeTotal = 0;
-        int sim = 0;
 
-        System.out.println("Nome: ");
-        String y = scanner.nextLine();
+        Product mesa = new Product();
 
-        System.out.println("Preco: ");
-        double preco = scanner.nextDouble();
-        valorTotal = preco;
+        System.out.println("Enter product data: ");
+        System.out.print("Name: ");
+        mesa.setName(scanner.nextLine());
+        System.out.print("Price: ");
+        mesa.setPrice(scanner.nextDouble());
+        System.out.print("Quantity in stock: ");
+        mesa.addProducts(scanner.nextInt());
 
-        System.out.println("Quantidade no estoque: ");
-         int quantidade = scanner.nextInt();
-         quantidadeTotal = quantidade;
+        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", " + mesa.getQuantity() + " Units, " + "Total: $ "
+                + mesa.totalValueInStock());
 
+        System.out.println("Enter the number of products to be added in stock: 5");
+        mesa.addProducts(5);
 
-        System.out.println("Nome = " + y);
-        System.out.println("Preço = " + preco);
-        System.out.println("Quantidade = " + quantidade);
-        System.out.println("Valor total no estoque = " + preco );
+        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", " + mesa.getQuantity() + " Units, " + "Total: $ "
+                + mesa.totalValueInStock());
 
-        System.out.println("Fazer uma entrda no estoque?  1 = Sim, 2= Não");
-        sim = scanner.nextInt();
-        if( sim == 1){
-            System.out.println("Informe o nome do produto: ");
-            String x = scanner.nextLine();
-            System.out.println("Preco: ");
-            preco = scanner.nextDouble();
-            valorTotal = valorTotal + preco;
-            System.out.println("Quantidade: ");
-            quantidade = scanner.nextInt();
-            quantidadeTotal = quantidadeTotal + quantidade;
-        }else{
-            System.out.println("Informe o nome do produto: ");
-            String x = scanner.nextLine();
-            System.out.println("Preco: ");
-            preco = scanner.nextDouble();
-            valorTotal = valorTotal - preco;
-            System.out.println("Quantidade: ");
-            quantidade = scanner.nextInt();
-            quantidadeTotal = quantidadeTotal - quantidade;
-        }
-
+        System.out.println("Enter the number of products to be removed from stock: 3");
+        mesa.removeProducts(3);
+        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", " + mesa.getQuantity() + " Units, " + "Total: $ "
+                + mesa.totalValueInStock());
 
     }
 }
