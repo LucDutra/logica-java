@@ -2,7 +2,7 @@ package br.com.javaoo.entities;
 
 public class Product {
 
-
+    //propriedades
     private String name;
     private double price;
     private int quantity;

@@ -31,19 +31,25 @@ public class Problema1 {
         System.out.print("Quantity in stock: ");
         mesa.addProducts(scanner.nextInt());
 
-        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", " + mesa.getQuantity() + " Units, " + "Total: $ "
+        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", "
+                + mesa.getQuantity() + " Units, " + "Total: $ "
                 + mesa.totalValueInStock());
 
         System.out.println("Enter the number of products to be added in stock: 5");
         mesa.addProducts(5);
 
-        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", " + mesa.getQuantity() + " Units, " + "Total: $ "
+        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", "
+                + mesa.getQuantity() + " Units, " + "Total: $ "
                 + mesa.totalValueInStock());
 
         System.out.println("Enter the number of products to be removed from stock: 3");
         mesa.removeProducts(3);
-        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", " + mesa.getQuantity() + " Units, " + "Total: $ "
+        System.out.println("Product data: " + mesa.getName() + " R$ " + mesa.getPrice() + ", "
+                + mesa.getQuantity() + " Units, " + "Total: $ "
                 + mesa.totalValueInStock());
+
+
+
 
     }
 }

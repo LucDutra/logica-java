@@ -53,7 +53,7 @@ public class Principal {
         eletrodomestico.setName("Geladeira ");
         System.out.println("Produto" + eletrodomestico.getName());
         eletrodomestico.setPrice(1.200);
-        System.out.println("Valor" + eletrodomestico.getPrice());
+        System.out.printf("Valor %.2f%n" , eletrodomestico.getPrice());
         eletrodomestico.addProducts(5);
         System.out.println("Quantidade: " + eletrodomestico.getQuantity());
         eletrodomestico.setColor("Preta");
