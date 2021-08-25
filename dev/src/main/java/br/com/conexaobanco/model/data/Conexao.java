@@ -1,5 +1,7 @@
 package br.com.conexaobanco.model.data;
 
+import main.java.br.com.conexaobanco.model.data.ServerSock;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -14,19 +16,20 @@ public class Conexao {
 
     // caminho do banco dentro da maquina ou do servidor
     private static final String DATABASE_URL =
-            "jdbc:mysql://127.0.0.1:3306/zoo?useTimezone=true&serverTimezone=UTC";
+            "jdbc:mysql://192.168.0.14/produto?useTimezone=true&serverTimezone=UTC";
 
     //usuario do banco
     private static final String USERNAME = "root";
 
     // senha do banco
-    private static final String PASSWORD = "";
+    private static final String PASSWORD = "12345";
 
     public Conexao() throws ClassNotFoundException, SQLException {
         Class.forName(DRIVER);
         this.connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
         this.connection.setAutoCommit(false);
     }
+
 
     public Connection getConnection() {
         return this.connection;
