@@ -1,30 +1,30 @@
 package br.com.conexaobanco.model.entity;
 
+
 public class Animal {
 
-    private String name;
+    // propriedades ou atributos
+    private String nome;
     private String especie;
     protected int idade;
     protected String sexo;
 
-    public Animal(){
-
+    public Animal() {
     }
 
-    public Animal(String name, String especie, int idade, String sexo) {
-        this.name = name;
+    public Animal(String nome, String especie, int idade, String sexo) {
+        this.nome = nome;
         this.especie = especie;
         this.idade = idade;
         this.sexo = sexo;
     }
 
-
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getEspecie() {
@@ -50,4 +50,17 @@ public class Animal {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nome='" + nome + '\'' +
+                ", especie='" + especie + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                '}';
+    }
 }
+
+
+

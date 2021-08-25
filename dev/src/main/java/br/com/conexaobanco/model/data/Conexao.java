@@ -9,13 +9,12 @@ import java.util.logging.Logger;
 public class Conexao {
 
     private Connection connection = null;
-
     // Driver de conexao com o banco (arquivo do maven)
     private String DRIVER = "com.mysql.cj.jdbc.Driver";
 
     // caminho do banco dentro da maquina ou do servidor
     private static final String DATABASE_URL =
-            "jdbc:mysql://localhost:3306/zoo?useTimezone=true&serverTimezone=UTC";
+            "jdbc:mysql://127.0.0.1:3306/zoo?useTimezone=true&serverTimezone=UTC";
 
     //usuario do banco
     private static final String USERNAME = "root";
@@ -54,11 +53,9 @@ public class Conexao {
                 this.connection.rollback();
             } catch (SQLException e) {
                 Logger.getLogger(Conexao.class.getName()).log(Level.SEVERE, null, e);
-            }finally {
+            } finally {
                 this.close();
             }
         }
     }
-
-
 }
